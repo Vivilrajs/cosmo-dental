@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
@@ -47,22 +48,15 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1.5 cursor-pointer group z-50 font-heading">
-            <span
-              className={`text-4xl sm:text-5xl font-black tracking-tighter leading-none -mt-1 group-hover:scale-110 transition-transform ${
-                !isScrolled && !mobileOpen ? 'text-emerald-400 drop-shadow-md' : 'text-emerald-600'
-              }`}
-            >
-              5
-            </span>
-            <div
-              className={`flex flex-col leading-none font-black tracking-widest ${
-                !isScrolled && !mobileOpen ? 'text-white drop-shadow-md' : 'text-emerald-800'
-              }`}
-            >
-              <span className="text-sm sm:text-base">COSMO</span>
-              <span className="text-sm sm:text-base">DENTAL</span>
-            </div>
+          <Link href="/" className="cursor-pointer group z-50 block shrink-0 overflow-visible">
+            <Image
+              src="/logoOG.png"
+              alt="Cosmo Dental"
+              width={176}
+              height={115}
+              priority
+              className="h-12 w-auto scale-[1.18] origin-left sm:h-14 transition-transform duration-300 group-hover:scale-[1.22]"
+            />
           </Link>
 
           {/* Desktop nav pill */}

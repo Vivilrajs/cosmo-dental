@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, ChevronRight, Clock } from 'lucide-react';
 
 export default function Footer() {
@@ -8,14 +9,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
         {/* Brand */}
         <div className="space-y-6">
-          <Link href="/" className="flex items-center gap-1.5 text-white cursor-pointer group w-max font-heading">
-            <span className="text-4xl sm:text-5xl font-black text-emerald-500 tracking-tighter leading-none -mt-1 group-hover:scale-110 transition-transform">
-              5
-            </span>
-            <div className="flex flex-col leading-none font-black tracking-widest text-emerald-50">
-              <span className="text-sm sm:text-base">COSMO</span>
-              <span className="text-sm sm:text-base">DENTAL</span>
-            </div>
+          <Link href="/" className="text-white cursor-pointer group w-max block">
+            <Image
+              src="/logoOG.png"
+              alt="Cosmo Dental"
+              width={176}
+              height={115}
+              className="h-14 w-auto transition-transform duration-300 group-hover:scale-[1.03]"
+            />
           </Link>
           <p className="text-slate-400 max-w-sm leading-relaxed text-sm sm:text-base font-medium">
             As the best dental clinic in Sarjapur road, near Kodathi gate, we combine state-of-the-art medical
