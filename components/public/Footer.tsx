@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="space-y-6">
           <Link href="/" className="text-white cursor-pointer group w-max block">
             <Image
-              src="/logoOG.png"
+              src="/logo.png"
               alt="Cosmo Dental"
               width={176}
               height={115}

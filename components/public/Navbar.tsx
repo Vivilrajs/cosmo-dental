@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="cursor-pointer group z-50 block shrink-0 overflow-visible">
             <Image
-              src="/logoOG.png"
+              src="/logo.png"
               alt="Cosmo Dental"
               width={176}
               height={115}
