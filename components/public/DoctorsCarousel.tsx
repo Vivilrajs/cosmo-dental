@@ -52,11 +52,11 @@ export default function DoctorsCarousel({ doctors }: { doctors: Doctor[] }) {
                 </div>
               </Link>
               <Link href={`/doctors/${doc.id}`}>
-                <h3 className="font-heading text-xl font-bold text-slate-900 mb-1 group-hover:text-emerald-600 transition-colors tracking-wide cursor-pointer line-clamp-1">
+                <h3 className="font-heading text-2xl sm:text-[1.7rem] font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors tracking-tight cursor-pointer line-clamp-2 leading-tight">
                   {doc.name}
                 </h3>
               </Link>
-              <p className="text-emerald-600 font-bold mb-4 text-[10px] uppercase tracking-[0.2em] line-clamp-1 min-h-[15px]">
+              <p className="text-emerald-600 font-bold mb-5 text-xs sm:text-sm uppercase tracking-[0.16em] line-clamp-2 min-h-[2.5rem] leading-relaxed">
                 {doc.role}
               </p>
               <p className="text-slate-600 text-sm mb-8 line-clamp-3 flex-grow leading-relaxed font-medium">{doc.bio}</p>

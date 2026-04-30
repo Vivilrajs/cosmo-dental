@@ -29,11 +29,13 @@ export default function DoctorsPage() {
               </div>
             </Link>
             <Link href={`/doctors/${doc.id}`}>
-              <h3 className="font-heading text-xl sm:text-2xl font-bold text-slate-900 mb-1 group-hover:text-emerald-600 transition-colors tracking-wide cursor-pointer">
+              <h3 className="font-heading text-2xl sm:text-3xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors tracking-tight cursor-pointer leading-tight">
                 {doc.name}
               </h3>
             </Link>
-            <p className="text-emerald-600 font-bold mb-4 text-[10px] sm:text-xs uppercase tracking-[0.2em]">{doc.role}</p>
+            <p className="text-emerald-600 font-bold mb-5 text-xs sm:text-sm uppercase tracking-[0.16em] leading-relaxed max-w-[28ch]">
+              {doc.role}
+            </p>
             <p className="text-slate-600 text-sm mb-8 line-clamp-3 flex-grow leading-relaxed font-medium">{doc.bio}</p>
             <Link href={`/doctors/${doc.id}`} className="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-full font-semibold text-xs tracking-[0.15em] uppercase bg-emerald-600 text-white hover:bg-emerald-700 shadow-md shadow-emerald-500/20 transition-all duration-300 mt-auto">
               View Profile
